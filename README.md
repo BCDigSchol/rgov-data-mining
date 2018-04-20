@@ -1,5 +1,5 @@
 # Intro
-This Python script can be used to mine public submission comments from [regulations.gov](https://www.regulations.gov/) and output the data as a CSV file. It was tested with Python 2.7 and Python 3.
+This [Python script](https://github.com/BCDigSchol/rgov-data-mining/blob/master/scrape.py) can be used to mine public submission comments from [regulations.gov](https://www.regulations.gov/) and output the data as a CSV file. It was tested with Python 2.7 and Python 3.
 
 
 # Start Here
@@ -9,7 +9,7 @@ This Python script can be used to mine public submission comments from [regulati
 
 
 # Building your query
-- This script will query the public submission comments for documents within a docket and requires this string for the header:
+- This [script](https://github.com/BCDigSchol/rgov-data-mining/blob/master/scrape.py) will query the public submission comments for documents within a docket and requires this string for the header:
   `header = "https://api.data.gov:443/regulations/v3/documents.json?api_key=[insert your api key here]&dktid="`
 - Identify the documentIDs to parse through a selection of documents within the docket and include `dct=PS` in order to limit to public submission comments:
   `documentIDs = ["insert Docket ID&dct=PS"]`
