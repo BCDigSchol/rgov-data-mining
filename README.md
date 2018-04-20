@@ -11,6 +11,7 @@ This [Python script](https://github.com/BCDigSchol/rgov-data-mining/blob/master/
 # Building your query
 - This [script](https://github.com/BCDigSchol/rgov-data-mining/blob/master/scrape.py) will query the public submission comments for documents within a docket and requires this string for the header:
   `header = "https://api.data.gov:443/regulations/v3/documents.json?api_key=[insert your api key here]&dktid="`
+  -  You will need to supply the API key in the header string. 
 - Identify the documentIDs to parse through a selection of documents within the docket and include `dct=PS` in order to limit to public submission comments:
   `documentIDs = ["insert Docket ID&dct=PS"]`
   - To identify the number of results (ex. 1000) you wish to download with `rpp=1000`
