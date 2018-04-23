@@ -1,5 +1,5 @@
 # Intro
-This [Python script](https://github.com/BCDigSchol/rgov-data-mining/blob/master/scrape.py) can be used to mine public submission comments from [regulations.gov](https://www.regulations.gov/) and output the data as a CSV file. It was tested with Python 2.7 and Python 3.
+This [Python script](https://github.com/BCDigSchol/rgov-data-mining/blob/master/scrape.py) can be used to data mine public submission comments from [regulations.gov](https://www.regulations.gov/) and output the data as a CSV file. It was tested with [Python 2.7](https://www.python.org/download/releases/2.7/) and [Python 3.6.4](https://www.python.org/downloads/release/python-364/).
 
 
 # Start Here
@@ -8,10 +8,10 @@ This [Python script](https://github.com/BCDigSchol/rgov-data-mining/blob/master/
 - The [Interactive API](https://regulationsgov.github.io/developers/console/) is a good place to start once you receive your API key. This will give you an idea of how you might want to modify the script and structure your query
 
 
-# Building your query
-- This [script](https://github.com/BCDigSchol/rgov-data-mining/blob/master/scrape.py) will query the public submission comments for documents within a docket and requires this string for the header:
+# Build your query
+- This [script](https://github.com/BCDigSchol/rgov-data-mining/blob/master/scrape.py) will query the public submission comments for documents within a docket
+- Input this string for the header and supply your api key where prompted:
     - `header = "https://api.data.gov:443/regulations/v3/documents.json?api_key=[insert your api key here]&dktid="`
-  -  You will need to supply the API key in the header string. 
 - Identify the documentIDs to parse through a selection of documents within the docket and include `dct=PS` in order to limit to public submission comments:
     - `documentIDs = ["insert Docket ID&dct=PS"]`
   - To identify the number of results (ex. 1000) you wish to download, use `rpp=1000`
