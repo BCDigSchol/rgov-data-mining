@@ -26,5 +26,5 @@ This [Python script](https://github.com/BCDigSchol/rgov-data-mining/blob/master/
 | submitterName | organization | commentText | postedDate | attachmentCount |
 --- | --- | --- | --- | --- |
 
-- The column headings can be modified based on the attributes you wish to mine from the website
+- The column headings can be modified based on the attributes you wish to data mine from the website
 
